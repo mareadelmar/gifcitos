@@ -1,0 +1,14 @@
+.gif-content {
+    *margin: 10px;
+    *width: 100%;
+}
+
+.gif-item {
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.gif-title {
+    color: #333;
+}

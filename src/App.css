@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    *background-color: #282c34;
+    background-color: #ffc0cb;
+}
+
+.App-container {
+    width: 100%;
+    max-height: 100vh;
+    color: white;
+    display: flex;
+    *flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
