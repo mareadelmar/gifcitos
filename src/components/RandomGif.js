@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./RandomGif.css";
-import { useGifs } from "../hooks/useGifs";
-import { API_URL, API_KEY } from "../services/settings";
+import getRandom from "../services/getRandom";
 import Gif from "./Gif";
+import Spinner from "../components/Spinner";
 
 const RandomGif = () => {
-    const apiURL = `${API_URL}/random?api_key=${API_KEY}&tag=&rating=g`;
-    const { gifs, loading } = useGifs({ apiURL });
-    const { url, title } = gifs;
+    const [loading, setLoading] = useState(false);
+    const [randomGif, setRandomGif] = useState({});
+    useEffect(() => {
+        setLoading(true);
+        getRandom().then((random) => {
+            const { url, title } = random;
+            setRandomGif(random);
+            setLoading(false);
+        });
+    }, []);
 
     return (
         <div className="random-gif">
             {loading ? (
-                <i className="loading">Cargando...</i>
+                <Spinner />
             ) : (
-                <Gif url={url} title={title} />
+                <Gif url={randomGif.url} title={randomGif.title} />
             )}
         </div>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "wouter";
-//import logo from "../logo.svg";
+import logo from "../logo.svg";
 import "./Header.css";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
                     className="logo"
                 />
             </Link>
-            <h1>GUIFCITOS</h1>
+            <h1 className="header-title">GUIFCITOS</h1>
         </section>
     );
 };

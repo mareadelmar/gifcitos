@@ -1,3 +1,11 @@
+/*
+fondo: #ffc0cb
+primario oscuro: #C2185B
+
+fondo posible: #6495ed
+color de acento anterior: #009688
+*/
+
 body {
     margin: 0;
     *background-color: #282c34;
@@ -5,11 +13,11 @@ body {
 }
 
 .App-container {
-    width: 100%;
-    max-height: 100vh;
+    max-width: 98vw;
     color: white;
     display: flex;
     *flex-direction: column;
+    *align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }

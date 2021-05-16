@@ -7,6 +7,13 @@ const ListGifs = ({ gifs }) => {
     return gifs.map(({ id, url, title }) => (
         <Gif key={id} url={url} title={title} id={id} />
     ));
+    // return (
+    //     <div className="gifs-container">
+    //         {gifs.map(({ id, url, title }) => {
+    //             <Gif key={id} url={url} title={title} id={id} />;
+    //         })}
+    //     </div>
+    // ); POR QUÉ ESTO NO ME ANDABA?
 };
 
 export default ListGifs;

@@ -1,19 +1,27 @@
-import React from "react";
-import { useGifs } from "../hooks/useGifs";
-import { API_URL, API_KEY } from "../services/settings";
+import React, { useEffect, useState } from "react";
+import getTrendingsGifs from "../services/getTrendingsGifs";
 import ListGifs from "./ListGifs";
+import Spinner from "../components/Spinner";
 
 const TrendingGifs = () => {
-    const apiURL = `${API_URL}/trending?api_key=${API_KEY}&limit=20`;
-    const { gifs, loading } = useGifs({ apiURL });
+    const [trendingGifs, setTredingGifs] = useState([]);
+    const [loading, setLoading] = useState(false);
 
+    useEffect(() => {
+        setLoading(true);
+        getTrendingsGifs().then((gifs) => {
+            console.log(gifs);
+            setTredingGifs(gifs);
+            setLoading(false);
+        });
+    }, []);
     return (
         <>
             {loading ? (
-                <i className="loading">Cargando...</i>
+                <Spinner />
             ) : (
                 <div className="gifs-container">
-                    <ListGifs gifs={gifs} />
+                    <ListGifs gifs={trendingGifs} />
                 </div>
             )}
         </>

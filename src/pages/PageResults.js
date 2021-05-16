@@ -1,24 +1,52 @@
-import React, { useState } from "react";
-import { API_URL, API_KEY } from "../services/settings";
+import React from "react";
+import "./PageResults.css";
 import ListGifs from "../components/ListGifs";
+import Spinner from "../components/Spinner";
 import { useGifs } from "../hooks/useGifs";
+import { Helmet } from "react-helmet";
 
 const PageResults = ({ params }) => {
+    // console.log(props) --> las props traen un objeto params con los parámetros.
     const { keyword } = params;
-    const apiURL = `${API_URL}/search?api_key=${API_KEY}&q=${keyword}&limit=20&offset=0&rating=G&lang=en`;
-    const { gifs, loading } = useGifs({ apiURL });
+    const { gifs, loading, setPage } = useGifs({ keyword });
 
+    const title = `GIFCITOS | Resultados para ${decodeURI(keyword)}`;
+    // useDocTitle({ title });
+
+    const handleClickPage = () => {
+        console.log("click a next page");
+        setPage((prevPage) => prevPage + 1);
+    };
+
+    console.log(gifs);
     return (
         <>
-            {loading ? (
-                <i className="loading">Cargando...</i>
-            ) : (
-                <div className="gifs-container">
-                    <ListGifs gifs={gifs} />
-                </div>
-            )}
+            <Helmet>
+                <title>{title}</title>
+                <meta name="description" content={title} />
+            </Helmet>
+            <section className="results-container">
+                {loading ? (
+                    <div className="results-spinner">
+                        <Spinner />
+                    </div>
+                ) : (
+                    <div>
+                        <div className="gifs-container">
+                            <ListGifs gifs={gifs} />
+                        </div>
+                        <div className="results-btn">
+                            <button onClick={handleClickPage}>
+                                Cargas más
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </section>
         </>
     );
 };
 
 export default PageResults;
+
+/* hacer componente Loading */

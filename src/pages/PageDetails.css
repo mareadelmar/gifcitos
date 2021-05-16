@@ -1,0 +1,42 @@
+.details-gif {
+    width: 100%;
+    *min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-gif .gif-item {
+    width: 85%;
+}
+
+.details-data {
+    *width: 100%;
+    display: flex;
+    flex-direction: column;
+    *align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: 10%;
+}
+
+.details-data p {
+    text-align: left;
+    color: #333;
+}
+
+.details-data p span {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+@media (min-width: 800px) {
+    .details-gif .gif-item {
+        width: 60%;
+    }
+
+    .details-data {
+        margin-left: 20%;
+    }
+}
