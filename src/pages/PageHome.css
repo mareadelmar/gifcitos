@@ -13,7 +13,7 @@
 .links-container a {
 	padding: 7px;
 	margin: 7px;
-	background-color: #c2185b;
+	background-color: #4984ab;
 	text-decoration: none;
 	color: #f2f2f2;
 }
@@ -26,7 +26,6 @@
 .random-container {
 	display: flex;
 	justify-content: center;
-	*align-items: center;
 	min-height: 40vh;
 }
 
@@ -35,7 +34,6 @@
 }
 
 .gifs-title {
-	*text-align: center;
 	color: #181213;
 	font-size: 28px;
 	margin-left: 10px;
