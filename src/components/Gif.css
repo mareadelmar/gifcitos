@@ -7,34 +7,45 @@ coral: #FF7077
 */
 
 :root {
-    --gif-1: #4297a0;
-    --gif-2: #edc988;
-    --gif-3: #d7385e;
-    --gif-4: #ff7077;
+	--gif-1: #4984ab;
+	--gif-2: #cdb700;
+	--gif-3: #61216d;
+	--gif-4: #d15687;
 }
 
-.gif-link:nth-child(5n + 1) img {
-    background-color: var(--gif-1);
+.gif-item:nth-child(4n + 1) {
+	background-color: var(--gif-1);
 }
-.gif-link:nth-child(5n + 2) img {
-    background-color: var(--gif-2);
+.gif-item:nth-child(4n + 2) {
+	background-color: var(--gif-2);
 }
-.gif-link:nth-child(5n + 3) img {
-    background-color: var(--gif-3);
+.gif-item:nth-child(4n + 3) {
+	background-color: var(--gif-3);
 }
-.gif-link:nth-child(5n + 4) img {
-    background-color: var(--gif-4);
+.gif-item:nth-child(4n + 4) {
+	background-color: var(--gif-4);
 }
-.gif-link:nth-child(5n + 5) img {
-    background-color: var(--gif-5);
+
+.gif-item:hover:nth-child(4n + 1) {
+	box-shadow: 0 0 0 6px var(--gif-1);
+}
+.gif-item:hover:nth-child(4n + 2) {
+	box-shadow: 0 0 0 6px var(--gif-2);
+}
+.gif-item:hover:nth-child(4n + 3) {
+	box-shadow: 0 0 0 6px var(--gif-3);
+}
+.gif-item:hover:nth-child(4n + 4) {
+	box-shadow: 0 0 0 6px var(--gif-4);
 }
 
 .gif-item {
-    margin: 5px;
-    display: inline-block;
-    width: 100%;
+	margin: 5px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 }
 
 .gif-title {
-    color: #333;
+	color: #333;
 }

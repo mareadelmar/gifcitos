@@ -14,7 +14,6 @@ const PageDetails = ({ params }) => {
 	if (loadingGif)
 		return (
 			<>
-				<Spinner />
 				<Helmet>
 					<title>GIFCITOS | Cargando...</title>
 				</Helmet>
