@@ -1,40 +1,40 @@
 .flex {
-    display: flex;
+	display: flex;
 }
 
 .header-container {
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    color: #333;
+	width: 100%;
+	align-items: center;
+	color: #333;
+	margin: 1.5em;
 }
 
 .header-app {
-    width: 70%;
+	width: 70%;
 }
 
 .header-logo {
-    width: 50px;
-    opacity: 0.9;
-    cursor: pointer;
-    margin: 10px 10px;
+	width: 50px;
+	opacity: 0.9;
+	cursor: pointer;
+	margin: 10px 10px;
 }
 
 .header-title {
-    font-family: "Amatic SC", cursive;
-    font-size: 38px;
-    font-weight: 700;
-    margin: 10px 10px 10px 0;
+	font-family: "Amatic SC", cursive;
+	font-size: 38px;
+	font-weight: 700;
+	margin: 10px 10px 10px 0;
 }
 
 .header-auth {
-    width: 28%;
-    justify-content: flex-end;
-    margin-right: 20px;
+	width: 28%;
+	justify-content: flex-end;
+	margin-right: 20px;
 }
 
 .auth-link {
-    text-decoration: none;
-    color: white;
-    background-color: blue;
+	text-decoration: none;
+	color: white;
+	background-color: blue;
 }

@@ -12,24 +12,29 @@ import { UserContextProvider } from "./context/UserContext";
 
 function App() {
 	return (
-		<div className='App'>
+		<>
 			<UserContextProvider>
 				<Header />
-				<SearchBar />
-				<section className='App-container'>
-					<GifsContextProvider>
-						<Route path='/' component={PageHome} />
-						<Route
-							path='/search/:keyword'
-							component={PageResults}
-						/>
-						<Route path='/gif/:id' component={PageDetails} />
-						{/* <Route path="/login" component={Login} /> */}
-						<Route path='/404' component={() => <p>error :s </p>} />
-					</GifsContextProvider>
-				</section>
+				<div className='App'>
+					<SearchBar />
+					<section className='App-container'>
+						<GifsContextProvider>
+							<Route path='/' component={PageHome} />
+							<Route
+								path='/search/:keyword'
+								component={PageResults}
+							/>
+							<Route path='/gif/:id' component={PageDetails} />
+							{/* <Route path="/login" component={Login} /> */}
+							<Route
+								path='/404'
+								component={() => <p>error :s </p>}
+							/>
+						</GifsContextProvider>
+					</section>
+				</div>
 			</UserContextProvider>
-		</div>
+		</>
 	);
 }
 
