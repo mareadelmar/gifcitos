@@ -1,14 +1,13 @@
 .details-gif {
     width: 100%;
-    *min-height: 90vh;
+    min-height: 75vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .details-gif .gif-item {
-    width: 85%;
+    width: 75%;
 }
 
 .details-data {
@@ -33,10 +32,14 @@
 
 @media (min-width: 800px) {
     .details-gif .gif-item {
-        width: 60%;
+        max-width: 35%;
     }
 
     .details-data {
         margin-left: 20%;
+    }
+
+    .details-gif {
+        min-height: 90vh;
     }
 }

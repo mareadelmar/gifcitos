@@ -19,7 +19,7 @@ export function useGifs({ keyword } = { keyword: null }) {
                 setLoading(false);
             });
         },
-        [keyword]
+        [keyword, setGifs]
     );
 
     useEffect(() => {
@@ -32,7 +32,7 @@ export function useGifs({ keyword } = { keyword: null }) {
             setGifs((prevGifs) => prevGifs.concat(nextGifs));
             setLoadingNextPage(false);
         });
-    }, [page]);
+    }, [page, keyword, setGifs]);
 
     return { gifs, loading, setPage, loadingNextPage };
 }

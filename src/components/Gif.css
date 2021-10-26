@@ -1,3 +1,34 @@
+/*
+azul: #4297A0
+amarillo: #edc988
+rosa oscuro: #d7385e
+coral: #FF7077
+
+*/
+
+:root {
+    --gif-1: #4297a0;
+    --gif-2: #edc988;
+    --gif-3: #d7385e;
+    --gif-4: #ff7077;
+}
+
+.gif-link:nth-child(5n + 1) img {
+    background-color: var(--gif-1);
+}
+.gif-link:nth-child(5n + 2) img {
+    background-color: var(--gif-2);
+}
+.gif-link:nth-child(5n + 3) img {
+    background-color: var(--gif-3);
+}
+.gif-link:nth-child(5n + 4) img {
+    background-color: var(--gif-4);
+}
+.gif-link:nth-child(5n + 5) img {
+    background-color: var(--gif-5);
+}
+
 .gif-item {
     margin: 5px;
     display: inline-block;

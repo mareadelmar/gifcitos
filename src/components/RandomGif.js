@@ -10,7 +10,7 @@ const RandomGif = () => {
     useEffect(() => {
         setLoading(true);
         getRandom().then((random) => {
-            const { url, title } = random;
+            //const { url, title } = random;
             setRandomGif(random);
             setLoading(false);
         });

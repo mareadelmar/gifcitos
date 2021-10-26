@@ -10,7 +10,7 @@ const SearchBar = () => {
         e.preventDefault();
         // mandar a otra ruta: mandamos parámetro keyword a ListGifs
         pushLocation(`/search/${keyword}`);
-        console.log(keyword);
+        console.log(keyword, path);
     };
 
     const handleInput = (e) => {
@@ -18,7 +18,7 @@ const SearchBar = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="search-bar">
             <input
                 className="search"
                 onChange={handleInput}

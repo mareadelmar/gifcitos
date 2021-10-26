@@ -1,12 +1,19 @@
-.header-content {
-    width: 100%;
+.flex {
     display: flex;
-    align-items: center;
-    color: #333;
-    *opacity: 0.8;
 }
 
-.logo {
+.header-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: #333;
+}
+
+.header-app {
+    width: 70%;
+}
+
+.header-logo {
     width: 50px;
     opacity: 0.9;
     cursor: pointer;
@@ -18,4 +25,16 @@
     font-size: 38px;
     font-weight: 700;
     margin: 10px 10px 10px 0;
+}
+
+.header-auth {
+    width: 28%;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
 }

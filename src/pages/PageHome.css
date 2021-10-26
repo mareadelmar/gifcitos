@@ -6,9 +6,8 @@
 
 .links-container {
     display: flex;
-    margin: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
+    line-height: 30px;
+    text-align: center;
 }
 
 .links-container a {
@@ -28,6 +27,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 75vh;
+}
+
+.random-gif .gif-item {
+    width: 80%;
 }
 
 .gifs-title {
@@ -38,13 +42,17 @@
 }
 
 .trending-container {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 800px) {
     .links-container {
-        width: auto;
-        line-height: 30px;
-        text-align: center;
+        margin: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .random-container {
+        min-height: 85vh;
     }
 }

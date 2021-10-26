@@ -1,7 +1,7 @@
 import { API_URL, API_KEY } from "../services/settings";
 
 export default function getTrendings() {
-    const limit = 20;
+    //const limit = 20;
     const apiURL = `${API_URL}/gifs/trending?api_key=${API_KEY}&limit=20`;
 
     return fetch(apiURL)

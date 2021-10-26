@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomePage.css";
+import "./PageHome.css";
 import TrendingSearches from "../components/TrendingSearches";
 import RandomGif from "../components/RandomGif";
 import TrendingGifs from "../components/TrendingGifs";

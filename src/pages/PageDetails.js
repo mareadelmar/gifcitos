@@ -11,9 +11,6 @@ const PageDetails = ({ params }) => {
     console.log(id);
     const { gif, loadingGif, isError } = useSingleGif({ id });
 
-    const title = `GIFCITOS | ${gif.title}`;
-    // useDocTitle({ title });
-
     if (loadingGif)
         return (
             <>
@@ -25,6 +22,9 @@ const PageDetails = ({ params }) => {
         );
     if (isError) return <Redirect to="/404" />;
     if (!gif) return null;
+
+    const title = `GIFCITOS | ${gif.title}`;
+    // useDocTitle({ title });
 
     return (
         <>
