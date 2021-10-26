@@ -1,10 +1,10 @@
 .random-gif {
-    width: 90%;
-    text-align: center;
+	width: 90%;
+	text-align: center;
 }
 
 @media (min-width: 800px) {
-    .random-gif {
-        width: 40%;
-    }
+	.random-gif {
+		width: 448px;
+	}
 }

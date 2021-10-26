@@ -4,21 +4,21 @@ import "./Header.css";
 import useUser from "../hooks/useUser";
 
 const Header = () => {
-    const { isLogged, logout } = useUser();
+	const { isLogged, logout } = useUser();
 
-    return (
-        <section className="flex header-container">
-            <div className="flex header-app">
-                <Link to="/">
-                    <img
-                        src="https://media.giphy.com/media/2si39FySvMsPwVsmSQ/giphy.gif"
-                        alt="gif logo"
-                        className="header-logo"
-                    />
-                </Link>
-                <h1 className="header-title">GUIFCITOS</h1>
-            </div>
-            <div className="flex header-auth">
+	return (
+		<section className='flex header-container'>
+			<div className='flex header-app'>
+				<Link to='/'>
+					<img
+						src='https://media.giphy.com/media/2si39FySvMsPwVsmSQ/giphy.gif'
+						alt='gif logo'
+						className='header-logo'
+					/>
+				</Link>
+				<h1 className='header-title'>GUIFCITOS</h1>
+			</div>
+			{/* <div className="flex header-auth">
                 {isLogged ? (
                     <button onClick={logout}>Logout</button>
                 ) : (
@@ -26,9 +26,9 @@ const Header = () => {
                         login
                     </Link>
                 )}
-            </div>
-        </section>
-    );
+            </div> */}
+		</section>
+	);
 };
 
 export default Header;
