@@ -7,10 +7,10 @@ coral: #FF7077
 */
 
 :root {
-	--gif-1: #4984ab;
+	--gif-1: #41b8d1;
 	--gif-2: #cdb700;
-	--gif-3: #61216d;
-	--gif-4: #d15687;
+	--gif-3: #bf50de;
+	--gif-4: #4bd19f;
 }
 
 .gif-item:nth-child(4n + 1) {
@@ -27,23 +27,24 @@ coral: #FF7077
 }
 
 .gif-item:hover:nth-child(4n + 1) {
-	box-shadow: 0 0 0 6px var(--gif-1);
+	box-shadow: 0 0 0 8px var(--gif-1);
 }
 .gif-item:hover:nth-child(4n + 2) {
-	box-shadow: 0 0 0 6px var(--gif-2);
+	box-shadow: 0 0 0 8px var(--gif-2);
 }
 .gif-item:hover:nth-child(4n + 3) {
-	box-shadow: 0 0 0 6px var(--gif-3);
+	box-shadow: 0 0 0 8px var(--gif-3);
 }
 .gif-item:hover:nth-child(4n + 4) {
-	box-shadow: 0 0 0 6px var(--gif-4);
+	box-shadow: 0 0 0 8px var(--gif-4);
 }
 
 .gif-item {
 	margin: 5px;
 	display: inline-block;
 	width: 100%;
-	height: 100%;
+	*height: 100%;
+	cursor: pointer;
 }
 
 .gif-title {
