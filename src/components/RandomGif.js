@@ -5,6 +5,7 @@ import Gif from "./Gif";
 
 const RandomGif = () => {
 	const [randomGif, setRandomGif] = useState({});
+
 	useEffect(() => {
 		getRandom().then(random => {
 			//const { url, title } = random;

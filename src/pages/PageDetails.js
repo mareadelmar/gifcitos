@@ -3,12 +3,10 @@ import { Redirect } from "wouter";
 import "./PageDetails.css";
 import useSingleGif from "../hooks/useSingleGif";
 import Gif from "../components/Gif";
-import Spinner from "../components/Spinner";
 import { Helmet } from "react-helmet";
 
 const PageDetails = ({ params }) => {
 	const { id } = params;
-	console.log(id);
 	const { gif, loadingGif, isError } = useSingleGif({ id });
 
 	if (loadingGif)

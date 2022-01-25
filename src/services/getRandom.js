@@ -1,22 +1,24 @@
-import { API_URL, API_KEY } from "../services/settings";
+const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 
 export default function getRandom() {
-    const apiURL = `${API_URL}/gifs/random?api_key=${API_KEY}&tag=&rating=g`;
+	const apiURL = `${REACT_APP_API_URL}/gifs/random?api_key=${REACT_APP_API_KEY}&rating=g`;
+	console.log(apiURL);
+	return fetch(apiURL)
+		.then(res => {
+			return res.json();
+		})
+		.then(response => {
+			console.log(response.data);
+			// cambiaron las urls que trae de opción
+			const { data } = response;
+			const { title, images } = data;
+			const { fixed_height_downsampled } = images;
 
-    return fetch(apiURL)
-        .then((res) => {
-            console.log(res);
-            return res.json();
-        })
-        .then((response) => {
-            console.log(response.data);
-            const { data } = response;
-            const { fixed_height_downsampled_url, title } = data;
-            const gifRandom = {
-                url: fixed_height_downsampled_url,
-                title,
-            };
-            console.log(gifRandom);
-            return gifRandom;
-        });
+			const gifRandom = {
+				url: fixed_height_downsampled.url,
+				title,
+			};
+			console.log(gifRandom);
+			return gifRandom;
+		});
 }

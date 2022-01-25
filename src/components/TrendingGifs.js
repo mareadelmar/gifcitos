@@ -10,16 +10,14 @@ const TrendingGifs = () => {
 	useEffect(() => {
 		setLoading(true);
 		getTrendingsGifs().then(gifs => {
-			console.log(gifs);
 			setTredingGifs(gifs);
 			setLoading(false);
 		});
 	}, []);
 	return (
 		<>
-			{loading ? (
-				<Spinner />
-			) : (
+			{loading && <Spinner />}
+			{trendingGifs && (
 				<div className='gifs-container'>
 					<ListGifs gifs={trendingGifs} />
 				</div>
