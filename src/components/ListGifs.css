@@ -24,14 +24,20 @@
 	width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	:root {
 		--columns: 3;
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
 	:root {
 		--columns: 4;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--columns: 5;
 	}
 }

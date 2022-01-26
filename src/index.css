@@ -5,4 +5,11 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: rgba(0, 0, 0, 0.9);
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+	box-sizing: inherit;
 }

@@ -3,17 +3,17 @@
 }
 
 .header-container {
-	width: 100%;
 	align-items: center;
-	color: #f2f2f2;
 	margin: 1.5em;
 }
 
 .header-app {
-	*width: 70%;
 	width: 100%;
+	text-decoration: none;
+	color: #f2f2f2;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .header-logo {
@@ -27,7 +27,7 @@
 	font-family: "Amatic SC", cursive;
 	font-size: 38px;
 	font-weight: 700;
-	margin: 10px 10px 10px 0;
+	margin: 0;
 }
 
 .header-auth {

@@ -8,25 +8,14 @@ const Header = () => {
 
 	return (
 		<section className='flex header-container'>
-			<div className='flex header-app'>
-				<Link to='/'>
-					<img
-						src='https://media.giphy.com/media/2si39FySvMsPwVsmSQ/giphy.gif'
-						alt='gif logo'
-						className='header-logo'
-					/>
-				</Link>
+			<Link to='/' className='header-app'>
+				<img
+					src='https://media.giphy.com/media/2si39FySvMsPwVsmSQ/giphy.gif'
+					alt='gif logo'
+					className='header-logo'
+				/>
 				<h1 className='header-title'>GUIFCITOS</h1>
-			</div>
-			{/* <div className="flex header-auth">
-                {isLogged ? (
-                    <button onClick={logout}>Logout</button>
-                ) : (
-                    <Link to="/login" className="auth-link">
-                        login
-                    </Link>
-                )}
-            </div> */}
+			</Link>
 		</section>
 	);
 };
