@@ -8,7 +8,7 @@ const SearchBar = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		pushLocation(`/search/${keyword}`);
+		if (keyword) pushLocation(`/search/${keyword}`);
 	};
 
 	const handleInput = e => {
