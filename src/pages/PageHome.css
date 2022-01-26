@@ -16,14 +16,14 @@
 .links-container a {
 	padding: 7px;
 	margin: 7px;
-	background-color: #4984ab;
+	background-color: #f075c7;
 	text-decoration: none;
 	color: #f2f2f2;
 }
 
 .links-container a:hover {
 	opacity: 0.89;
-	color: #ffc0cb;
+	color: white;
 }
 
 .random-container {
@@ -37,7 +37,7 @@
 }
 
 .gifs-title {
-	color: #181213;
+	color: #f2f2f2;
 	font-size: 28px;
 	margin-left: 10px;
 }

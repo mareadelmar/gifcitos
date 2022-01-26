@@ -9,7 +9,8 @@
 	box-shadow: none;
 	width: 70%;
 	line-height: 3;
-	margin: 4em 0;
+	margin: 2em 0;
+	padding-left: 8px;
 }
 
 .search:hover {
@@ -18,11 +19,14 @@
 }
 
 .search-btn {
-	background: #181213;
-	padding: 8px;
+	background: #f075c7;
+	border: none;
+	padding: 12px;
 	border-radius: 0px 8px 8px 0px;
 	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 	color: #f2f2f2;
+	cursor: pointer;
+	font-weight: bolder;
 }
 
 @media (min-width: 800px) {

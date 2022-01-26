@@ -8,7 +8,7 @@ color de acento anterior: #009688
 
 body {
 	margin: 0;
-	background-color: #ffc0cb;
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 .App {

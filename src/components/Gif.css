@@ -7,10 +7,10 @@ coral: #FF7077
 */
 
 :root {
-	--gif-1: #41b8d1;
-	--gif-2: #cdb700;
+	--gif-1: #9dc3f5;
+	--gif-2: #f5ce84;
 	--gif-3: #bf50de;
-	--gif-4: #4bd19f;
+	--gif-4: #9bf590;
 }
 
 .gif-item:nth-child(4n + 1) {
@@ -40,7 +40,7 @@ coral: #FF7077
 }
 
 .gif-item {
-	margin: 5px;
+	margin: 8px;
 	display: inline-block;
 	width: 100%;
 	*height: 100%;
