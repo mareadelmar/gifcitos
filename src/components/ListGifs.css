@@ -18,9 +18,6 @@
 	*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	*grid-gap: 0 12px;
 	*grid-template-rows: masonry;
-}
-
-.gifs-container .gif-item {
 	width: 100%;
 }
 

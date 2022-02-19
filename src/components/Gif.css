@@ -14,16 +14,20 @@ coral: #FF7077
 }
 
 .gif-item:nth-child(4n + 1) {
-	background-color: var(--gif-1);
+	background: var(--gif-1);
+	border: 2px solid var(--gif-1);
 }
 .gif-item:nth-child(4n + 2) {
-	background-color: var(--gif-2);
+	background: var(--gif-2);
+	border: 2px solid var(--gif-2);
 }
 .gif-item:nth-child(4n + 3) {
-	background-color: var(--gif-3);
+	background: var(--gif-3);
+	border: 2px solid var(--gif-3);
 }
 .gif-item:nth-child(4n + 4) {
-	background-color: var(--gif-4);
+	background: var(--gif-4);
+	border: 2px solid var(--gif-4);
 }
 
 .gif-item:hover:nth-child(4n + 1) {
@@ -43,7 +47,7 @@ coral: #FF7077
 	margin: 8px;
 	display: inline-block;
 	width: 100%;
-	*height: 100%;
+	height: 100%;
 	cursor: pointer;
 }
 
