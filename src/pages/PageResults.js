@@ -6,18 +6,15 @@ import { useGifs } from "../hooks/useGifs";
 import { Helmet } from "react-helmet";
 
 const PageResults = ({ params }) => {
-	// console.log(props) --> las props traen un objeto params con los parámetros.
 	const { keyword } = params;
 	const { gifs, loading, setPage } = useGifs({ keyword });
 
 	const title = `GIFCITOS | Resultados para ${decodeURI(keyword)}`;
-	// useDocTitle({ title });
 
 	const handleClickPage = () => {
 		setPage(prevPage => prevPage + 1);
 	};
 
-	console.log(gifs);
 	return (
 		<>
 			<Helmet>
@@ -47,5 +44,3 @@ const PageResults = ({ params }) => {
 };
 
 export default PageResults;
-
-/* hacer componente Loading */

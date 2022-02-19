@@ -7,7 +7,7 @@ export default function useUser() {
 
 	const login = useCallback(() => {
 		setState({ isLoading: true, isError: false });
-		// llamamos al servicio loginService + states de loading y error + then y catch
+		// TODO
 	}, []);
 
 	const logout = useCallback(() => {

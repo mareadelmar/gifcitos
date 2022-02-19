@@ -8,7 +8,6 @@ const RandomGif = () => {
 
 	useEffect(() => {
 		getRandom().then(random => {
-			//const { url, title } = random;
 			setRandomGif(random);
 		});
 	}, []);

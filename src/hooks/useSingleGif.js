@@ -17,10 +17,6 @@ export default function useSingleGif({ id }) {
 			setLoadingGif(true);
 			getDetailGif({ id })
 				.then(gif => {
-					console.log(
-						gif,
-						"desde useSingleGil después de traerel gif del servicio"
-					);
 					setGif(gif);
 					setIsError(false);
 					setLoadingGif(false);

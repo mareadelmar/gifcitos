@@ -3,12 +3,11 @@ import React, { useState } from "react";
 const Context = React.createContext({});
 
 export function UserContextProvider({ children }) {
-    // javascript web token
-    const [jwt, setJWT] = useState(null);
+	const [jwt, setJWT] = useState(null);
 
-    return (
-        <Context.Provider value={{ jwt, setJWT }}>{children}</Context.Provider>
-    );
+	return (
+		<Context.Provider value={{ jwt, setJWT }}>{children}</Context.Provider>
+	);
 }
 
 export default Context;

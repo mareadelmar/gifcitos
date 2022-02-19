@@ -35,5 +35,3 @@ export function useGifs({ keyword } = { keyword: null }) {
 
 	return { gifs, loading, setPage, loadingNextPage };
 }
-
-//export default useGifs;

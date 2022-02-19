@@ -1,7 +1,6 @@
 const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 
 export default function getTrendings() {
-	//const limit = 20;
 	const apiURL = `${REACT_APP_API_URL}/gifs/trending?api_key=${REACT_APP_API_KEY}&limit=20`;
 
 	return fetch(apiURL)

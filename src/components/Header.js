@@ -1,11 +1,8 @@
 import React from "react";
 import { Link } from "wouter";
 import "./Header.css";
-//import useUser from "../hooks/useUser";
 
 const Header = () => {
-	//const { isLogged, logout } = useUser();
-
 	return (
 		<section className='flex header-container'>
 			<Link to='/' className='header-app'>

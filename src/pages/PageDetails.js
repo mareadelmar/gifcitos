@@ -21,7 +21,6 @@ const PageDetails = ({ params }) => {
 	if (!gif) return null;
 
 	const title = `GIFCITOS | ${gif.title}`;
-	// useDocTitle({ title });
 
 	return (
 		<>
@@ -31,16 +30,6 @@ const PageDetails = ({ params }) => {
 			</Helmet>
 			<div className='details-gif'>
 				<Gif {...gif} />
-				{/* <div className='details-data'>
-					<p>
-						<span>name:</span>
-						{` ${gif.title}`}
-					</p>
-					<p>
-						<span>url:</span>
-						{` ${gif.url}`}
-					</p>
-				</div> */}
 			</div>
 		</>
 	);

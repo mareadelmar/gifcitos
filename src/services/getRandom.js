@@ -17,7 +17,6 @@ export default function getRandom() {
 				url: fixed_height_downsampled.url,
 				title,
 			};
-			console.log(gifRandom);
 			return gifRandom;
 		});
 }
